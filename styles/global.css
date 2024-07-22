@@ -1,0 +1,86 @@
+:root {
+    --border-color: #291D4D;
+    --dialong-background: #FFF3B4;
+
+    --menu-background: #FFE8D2;
+    --menu-border-color: #A48465;
+    --menu-font-color: #3A160D;
+    --menu-selected-background: #7fc2ff;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #faf8f7;
+    padding: 0; 
+    margin: 0;
+    overflow: hidden;
+}
+.window-body{
+    padding: 10px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.game-wrapper{
+    position:relative;
+    height: calc(100vh);
+    width: 100vw;
+    
+    /* background-color: orange; */
+    overflow-y: auto;
+}
+
+.menu-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 15px;
+    width: 100%;
+    /* background-color: green; */
+    margin-top: -7px;
+    padding: 3px 3px 3px 0px;
+}
+
+.menu-button{
+    padding: 0px;
+    margin-left: 3px;
+}
+
+.game-container {
+    position:absolute;
+    top: -7px; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 272px;
+    height:186px;
+    transform: scale(3);
+
+    /* background-color: blue; */
+
+    /* 186px */
+
+  
+    /* position: relative;
+    width: 272px;
+    height:186px;
+    margin: 0 auto;
+
+    transform: scale(3) translateY(50%); */
+}
+
+.game-container canvas,
+.menu-wrapper {
+    image-rendering: pixelated;
+}
+
+.intro-list{
+    margin: 0px 0px 0px 15px;
+    padding:0px;
+}
+
+li{
+    margin-bottom: 7px;
+}

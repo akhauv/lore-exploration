@@ -1,0 +1,83 @@
+@import url('http://fonts.cdnfonts.com/css/proggy-tiny');
+
+.popup-window {
+    position: absolute;
+    margin-top: 0;
+    z-index: 9;
+
+    border: 3px solid;
+    border-color: #554e4e;
+    background-color: #2a2828;
+    
+    text-align: center;
+    font-size: 20px;
+    font-family: 'ProggyTinyTT', sans-serif;
+
+}
+
+/* 2a2828 */
+
+.window-body{
+    width: 100%;
+    
+    border: 2px solid;
+    border-color: #313030 #212020 #212020 #313030;
+    background-color: #2a2828;
+    color: white;
+}
+
+.window-header{
+    display: flex;
+    padding: 0px 0px 3px 0px;
+    z-index: 10;
+    background-color: #554e4e;
+}
+
+
+.window-topbar{
+    cursor: move;
+    width: 100%;
+    margin: 0px 3px 0px 0px;
+    padding: 7.5px 4px 3px 7px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #e4e4e4 #a29e9e #a29e9e #e4e4e4;
+    color: black;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.window-close{
+    height: 100%;
+    width: 30px;
+    padding: 7.5px 4px 3px 4px;
+    background-color: #8a6666;
+    border: 2px solid;
+    border-color: #9d7979 #815e5e #815e5e #9d7979;
+    color: white;
+}
+
+.window-close:hover,
+.window-close:focus {
+    color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #554e4e;
+    color: #fff;
+  } */

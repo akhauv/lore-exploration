@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vellichor</title>
+        <link href="styles/global.css" type="text/css" rel="stylesheet">
+        <link href="styles/TextMessage.css" type="text/css" rel="stylesheet">
+        <link href="styles/SceneTransition.css" type="text/css" rel="stylesheet">
+        <link href="styles/Popups.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- INTRO POPUP -->
+        <div id="p-intro" class="popup-window" style="width: 370px; display: none">
+            <div class="window-header">
+                <div id="p-intro-topbar" class="window-topbar">
+                    welcome.txt
+                </div>
+                <div id="btn-intro-close" class="button window-close">X</div>
+            </div>
+            <div class="window-body">
+                <ul class="intro-list">
+                    <li>Welcome to the village of Sonder, Vellichor :3</li>
+                    <li>WASD or arrow keys to move the character.</li>
+                    <li>Popups are draggable by the top bar.</li>
+                    <li style="margin-bottom: 0px">Thank you for coming!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CHARACTERS POPUP -->
+        <div id="p-charas" class="popup-window" style="width: 370px; display: none">
+            <div class="window-header">
+                <div id="p-charas-topbar" class="window-topbar">
+                    characters.txt
+                </div>
+                <div id="btn-charas-close" class="button window-close">X</div>
+            </div>
+            <div class="window-body">
+                <div style="overflow-wrap: break-word; line-height: 25px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                    <img src="images/placeholder.png" width="50px" height="50px">
+                </div>
+            </div>
+        </div>
+
+        <!-- CHARACTERS -->
+                    
+        <div class="game-wrapper">
+            <div class="game-container">
+                <canvas class="game-canvas" width="272" height="186"></canvas>
+                <div class="menu-wrapper">
+
+                    <a id="btn-intro" class="button menu-button">
+                        <img src="images/button-info.png">
+                    </a>
+                    <a id="btn-charas" class="button menu-button">
+                        <img src="images/button-charas.png">
+                    </a>
+
+                </div>
+            </div>
+        </div>  
+
+
+
+
+        <!-- Scripts -->
+        <script src="Popup.js"></script>
+        <script src="utils.js"></script>
+        <script src="DirectionInput.js"></script>
+        <script src="Sonder.js"></script>
+        <script src="GameObject.js"></script>
+        <script src="Person.js"></script>
+        <script src="Sprite.js"></script>
+        <script src="SonderMap.js"></script>
+        <script src="SonderEvent.js"></script>
+        <script src="TextMessage.js"></script>
+        <script src="KeyPressListener.js"></script>
+        <script src="RevealingText.js"></script>
+        <script src="SceneTransition.js"></script>
+        <script src="init.js"></script> <!--needs to be last-->
+    </body>
+</html>
